@@ -47,6 +47,12 @@ onCustomDeletePressed: function(oEvent) {
   }" />
 ```
 
+# Model
+
+## oModel.update sends a POST instead of a PUT/merge
+
+In the parameters object, set merge: false to send a PUT or merge: true to send a MERGE. Otherwise it will send a POST.
+
 
 # Fiori
 
