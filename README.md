@@ -27,6 +27,8 @@ onCustomDeletePressed: function(oEvent) {
       .getSource()
       .getBindingContext()
       .getPath();
+  // if the button is not bound to anything in the object, then you can use this
+  var sPath = oEvent.getSource().getParent().getBindingContextPath();
   ...
 },
 ```
