@@ -6,6 +6,24 @@ Notes and snippets for UI5 applications
 
 ## Handling events on tables
 
+### Navigating from items on a table
+
+sap.m.Table can have a ColumnListItem on each row. This control can have a `type="Navigation"` which will render it with an arrow on the right and make the row clickable.
+
+```
+<ColumnListItem
+						type="Navigation"
+						press="onRowPress">
+```
+
+To grab the item pressed ID, do:
+
+```
+function (oEvent) {
+  var id = oEvent.getSource().getBindingContext().getProperty("ID");
+...
+```
+
 ### Deleting items on a sap.m.Table
 
 sap.m.Table has a "Delete" mode. On this mode it renders a delete button on every row. Below an example of an handler for fetching the actioned item model path. Note this is different to putting a button on the row itself as in that case the handler needs to be slightly different (code also below).
