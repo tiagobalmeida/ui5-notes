@@ -51,7 +51,20 @@ onCustomDeletePressed: function(oEvent) {
 },
 ```
 
+# Formatting
 
+## Formatting explicitly using the formatter class
+
+```
+sap.ui.define(['sap/ui/model/type/Date'], function (sapTypeDate) {
+
+...
+
+var oFormatter = new sapTypeDate({
+  pattern: 'yyyy/MM/dd',
+});
+oFormatter.formatValue(myDateObject, 'string');
+```
 
 # Binding
 
