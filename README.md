@@ -28,7 +28,7 @@ To grab the item pressed ID, do:
 
 ```
 function (oEvent) {
-  var id = oEvent.getSource().getBindingContext().getProperty("ID");
+  var id = oEvent.getSource().getBindingContext(<modelName>).getProperty("ID");
 ...
 ```
 
