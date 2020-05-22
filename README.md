@@ -2,6 +2,14 @@
 
 Notes and snippets for UI5 applications
 
+# Debugging foo
+
+## When debugging how do I know the type of a UI5 object? 
+
+```
+.getMetadata()
+```
+
 # Event handling
 
 ## Handling events on tables
