@@ -4,7 +4,7 @@ Notes and snippets for UI5 applications
 
 # Debugging foo
 
-## When debugging how do I know the type of a UI5 object? 
+## While debugging how do I know the type of a UI5 object? 
 
 ```
 .getMetadata()
@@ -118,3 +118,9 @@ Other options are clearing caches in the frontend server. Namely:
 ## Launchpad configuration url
 
 `https://URL_TO_FRONTEND_SERVER/sap/bc/ui5_ui5/sap/arsrvc_upb_admn/main.html`
+
+# CAP Cloud application programming model
+
+## Entity set limited to 1000 records - disable limit on entityset top
+
+By default CAP limits all the entitysets to 1000 records. This can be changed with the annotations `@cds.query.limit.default` and `@cds.query.limit.max` set to 0. in the .cds file
